@@ -1,17 +1,15 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import TodoList from './TodoListComponent'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello React!</p>
-        <p>Hello React!</p>
-      </header>
-    </div>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>TODOアプリ</h1>
+        <TodoList />
+      </div>
+    )
+  }
 }
 
 export default App
